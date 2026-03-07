@@ -15,7 +15,7 @@ def random_sleep(max_delay: float = 3.0, min_delay: float = 0.1):
 def request_url(url: str, headers: dict, is_json: bool = False) -> None | str | dict:
     logging.info(f"Request = {url}")
     try:
-        res = requests.get(url, headers=headers)
+        res = requests.get(url, headers=headers, timeout=15)
         random_sleep()
         if res.status_code != 200:
             logging.warning("Error code = {res.status_code}")

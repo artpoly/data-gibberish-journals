@@ -173,5 +173,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     logging.info(f"args = {args}")
 
-    # process_config(args.config, args.force, args.page_limit)
+    process_config(args.config, args.force, args.page_limit)
     process_pdf(args.config, args.pdf, args.pdf_limit)

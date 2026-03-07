@@ -1,12 +1,14 @@
-# SHIT Journal Archives
+# Gibberish Journal Archives
 
-[S.H.I.T](https://shitjournal.org/) Sciences / Humanities / Information / Technology
+> [!INFO]
+> Update at: 2026-03-07
 
-PDF 文件总数：101
+- [x] [:link: SHIT](https://shitjournal.org/) 📝 papers: 101
+- [x] [:link: Rubbish](https://rubbish-journal.org/) 📝 papers: 125
+- [x] [:link: Joker of Academics](https://jokerofacademics.com/) 📝 papers: 220
+- [ ] [:link: Web of Nothing](https://webofnothing.org/)
+- [ ] [:link: PhDog Report](https://phdog-report-v6.zeabur.app/)
 
----
-
-> "Truth Fades, S.H.I.T Lasts."
-> “真理会过时，构石永恒。”
->
-> 内容纯属整活，不代表任何学术观点或现实指导建议。请保持理智，切勿模仿。
+> Imagination is more important than knowledge. -- Albert Einstein
+> 
+> Stay hungry, stay foolish. -- Steve Jobs
