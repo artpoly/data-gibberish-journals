@@ -32,7 +32,7 @@ esac
 pdf_count=$(find "$option" -name "*.pdf" | wc -l | xargs)
 echo "pdf in $option = $pdf_count"
 
-sed -i '' -E "s/(Update at:).*/\1 $update/" README.md
-sed -i '' -E "s/($option.*papers:).*/\1 $pdf_count/" README.md
+sed -i -E "s/(Update at:).*/\1 $update/" README.md
+sed -i -E "s/($option.*papers:).*/\1 $pdf_count/" README.md
 
 echo "Done"
