@@ -40,7 +40,7 @@ def download_api_data(save_file, key, sort_key, limit=10, force=False, page_limi
     max_pages = min(pages, page_limit) if page_limit > 0 else pages
     for page in range(2, max_pages + 1):
         url = API_URL.format(zone=key, page=page, sort=sort_key, limit=limit)
-        result = request_json(url, headers)
+        result = request_url(url, headers, is_json=True)
         if result and result.get("data"):
             data_list.extend(result["data"])
         if result is None:
