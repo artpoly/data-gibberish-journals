@@ -48,7 +48,11 @@ def parse_list(selector) -> list[dict]:
         anchor = card_body.css("h2.card-title a")
         title = anchor.css("::text").get()
         link = anchor.xpath("@href").get()
-        file_id = int(link.split("?id=")[-1])
+        id_raw = link.split("?id=")[-1]
+        if not id_raw.isdigit():
+            logging.warning(f"Error id = {link}")
+            continue
+        file_id = int(id_raw)
         authors = card_body.css("div.card-author ::text").get()
         abstract = card_body.css("p.card-abstract ::text").get()
         meta = card_body.css("div.card-meta>span ::text").getall()
